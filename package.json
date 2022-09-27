@@ -8,4 +8,7 @@
     "mongoose": "^6.6.1",
     "save": "^2.5.0"
   }
+  "scripts": {
+        "start": "node server/app.js"
+    }
 }
