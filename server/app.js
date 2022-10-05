@@ -7,12 +7,16 @@ var express = require('express'),
 
   User = require('./models/userModel'),
   Server = require('./models/serverModel'),
+  Bracket = require('./models/bracketModel'),
   
   bodyParser = require('body-parser'),
   jsonwebtoken = require("jsonwebtoken");
 
 var cors = require('cors');
 app.use(cors());
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 const dotenv = require('dotenv').config();
 
