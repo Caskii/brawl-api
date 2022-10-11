@@ -22,6 +22,10 @@ var ServerSchema = new Schema({
     trim: true,
     required: true
   },
+  serverName: {
+    type: String,
+    required: true
+  },
   players:[Player],
   map:[String],
 });
